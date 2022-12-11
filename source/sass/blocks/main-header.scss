@@ -1,9 +1,43 @@
 .main-header {
   position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  max-width: 280px;
-  width: 100%;
   margin: 0 auto;
+  width: 280px;
+  @media (min-width: $tablet-width) {
+    width: 710px;
+    margin-top: 42px;
+    gap: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    justify-content: space-between;
+  }
+}
+
+.main-header__logo {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__logo {
+    gap: 20px;
+  }
+
+  .main-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__logo {
+    gap: 20px;
+  }
+
+  .main-header__toggle {
+    display: none;
+  }
 }

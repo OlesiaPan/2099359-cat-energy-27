@@ -1,8 +1,13 @@
 .opportunities {
+
   height: 266px;
   background: hsl(0, 0%, 95%);
   padding-top: 24px;
   padding-left: 22px;
+  @media(min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 340px 200px;
+  }
 }
 
 .opportunities__header {
@@ -19,6 +24,9 @@
   width: 50px;
   height: 50px;
   margin-bottom: 22px;
+  @media(min-width: $tablet-width) {
+    order: 2;
+  }
 }
 
 .opportunities__thumb-slim {
